@@ -1,0 +1,28 @@
+class Wave {
+  title
+  creationDateTime
+}
+
+class Blip {
+  content
+  creationDateTime
+  parentWave: Wave 
+}
+
+class User {
+  name
+}
+
+class Thread {
+  parentWave: Wave
+}
+
+class Annotation {
+  content 
+  parentBlip: Blip
+}
+
+Wave "1" -- "0..*" Thread : contains >
+Thread "1" -- "0..*" Blip : contains >
+Blip "1" -r- "0..*" Annotation : contains >
+Blip "1" -l- "1" User : created by >

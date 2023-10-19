@@ -1,0 +1,47 @@
+class Wave {
+  title
+  creationDateTime
+  isPrivate
+  participants: User[]
+}
+
+class Thread {
+  title
+  creationDateTime
+  parentWave: Wave
+}
+
+class Blip {
+  content
+  creationDateTime
+  parentThread: Thread
+  author: User
+  annotations: Annotation[]
+  attachments: Attachment[]
+}
+
+
+class Annotation {
+  content
+  creationDateTime
+  parentBlip: Blip
+  author: User
+}
+
+class Attachment {
+  fileName
+  fileData
+  parentBlip: Blip
+}
+
+class User {
+  name
+  email
+}
+
+Wave "1" -- "0..*" Thread: contains >
+Thread "1" -- "0..*" Blip: contains >
+Blip "0..*" -- "0..*" Attachment: has >
+Blip "0..*" -r- "0..*" Annotation: has >
+Blip "1" -- "1" User: created by >
+Annotation "1" -- "1" User: created by >

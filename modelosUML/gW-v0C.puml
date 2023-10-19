@@ -1,0 +1,18 @@
+class Wave {
+  - title
+  - creationDateTime
+}
+
+class Blip {
+  - content
+  - author
+  - creationDateTime
+  - parentWave: Wave
+}
+
+class User {
+  name
+}
+
+Wave "1" -- "0..*" Blip : contains >
+Blip "1" -l- "1" User : created by >

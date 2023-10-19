@@ -1,0 +1,25 @@
+@startuml
+
+class Wave {
+  - id: string
+  - title: string
+  - creationDateTime: datetime
+}
+
+class Blip {
+  - id: string 
+  - content: string
+  - author: string
+  - creationDateTime: datetime
+  - parentWave: Wave
+}
+
+class User {
+  - id: string
+  - name: string
+}
+
+Wave "1" -- "0..*" Blip : contains >
+Blip "1" -l- "1" User : created by >
+
+@enduml
