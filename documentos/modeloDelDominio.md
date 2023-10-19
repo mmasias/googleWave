@@ -18,4 +18,4 @@ Interesa obtener un modelo del dominio general, con ciertos detalles y sobretodo
 
 |||
 |-|-|
-![](/imagenes/modelosUML/gW-v0.svg)|![](/imagenes/modelosUML/gW-v0C.svg)
+![](../imagenes/modelosUML/gW-v0.svg)|![](../imagenes/modelosUML/gW-v0C.svg)

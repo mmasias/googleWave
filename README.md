@@ -6,6 +6,13 @@ Google Wave fue una plataforma de comunicación y colaboración en línea desarr
 - Permite a los usuarios tener "conversaciones waves" donde múltiples personas pueden editar y responder en una sola pantalla en tiempo real, así como ver ediciones secuencialmente.
 - Incorporó capacidades como hilos de discusión, edición colaborativa simultánea, geolocalización, drag and drop, correcciones ortográficas, traducción automática y más.
 
+![](/imagenes/googlewave.png)
+
 A pesar de la gran expectativa inicial, la adopción por parte de los usuarios fue baja. Para 2012, Google decidió cerrar el servicio indicando que no ganó suficiente tracción entre los usuarios.
 
 Algunas de las tecnologías desarrolladas para Google Wave se reutilizaron en productos posteriores de Google como Google Docs.
+
+## Tareas
+
+- [Modelo del dominio](/documentos/modeloDelDominio.md).
+- [Disciplina de requisitos](/documentos/disciplinaDeRequisitos.md).
